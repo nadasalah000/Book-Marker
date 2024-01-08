@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+section{
+    background-image: url(../image/3.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: #b8860b;
+    font-family: "Pacifico", cursive;
+}
+.container{
+    height: 95%;
+    width: 60%; 
+    background-color: #092635;
+    opacity: 0;
+    transition: opacity 3s;
+    position: relative;
+}
+.play{
+    position: absolute;
+    color: #b8860b;
+}
+.play1{
+    top: 20%;
+    left: 15%;
+}
+.play2{
+    top: 20%;
+    left: 50%;
+}
+.container:hover{
+    opacity: 0.8;
+}
+.darke{
+    border: 1px darkgoldenrod dashed;
+    box-shadow: 3px 3px 30px darkgoldenrod ;
+    margin-block: 1.25rem;
+    padding: .625rem;
+} 
+h2{
+    text-align: center;
+    background-image: repeating-conic-gradient(#b8860b 0% 0.1%,#092635 0.1% 0.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control:focus {
+    border-color: rgb(184, 134, 11);
+    box-shadow: 0 0 0 0.25rem rgb(184, 134, 11, 0.4);
+}
+.btn5{
+    color: #092635;
+    background-color: white;
+    border: .08rem solid white;
+    border-radius: 0.4rem;
+    padding-inline: 1.875rem;
+    padding-block: 0.4rem;
+}
+.btn5:hover{
+    background-color: #092635;
+    color: white;
+}
+.table{
+    width: 80%;
+    margin: auto;
+    background-color: darkgoldenrod;
+    color: #092635;
+}
+.btn{
+    background-color: white;
+}
+a,a:hover{
+    text-decoration: none;
+    color: inherit;
+}

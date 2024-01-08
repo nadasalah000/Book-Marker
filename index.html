@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- & icon -->
+    <link rel="icon" href="image/bookmark.png">
+    <!-- & font -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Nanum+Gothic+Coding&family=Open+Sans&family=Pacifico&family=Rethink+Sans:ital@1&family=Roboto:wght@700&family=Rubik+Bubbles&family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- & fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- & bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- & main -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- & media -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="imp">
+    <section class=" d-flex justify-content-center align-items-lg-center">
+        <i class="fa-regular fa-hand-point-right fa-bounce fa-2xl play play1"></i>
+        <i class="fa-solid fa-book-open-reader fa-beat-fade fa-2xl play play2"></i>
+        <!-- ~ caption+tabel -->
+        <div class="container">
+          <div class="caption">
+                <h1 class="text-center">Bookmarker</h1>
+                <div class="darke">
+                    <!-- * header -->
+                        <h2><i class="fa-regular fa-bookmark"></i>Bookmark your favorite sites<i class="fa-regular fa-bookmark"></i></h2>
+                    <!-- * first label -->
+                        <label for="bookmarkName" class="pb-1 fw-semibold mt-2"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                        <input type="text" placeholder="Bookmark Name" oninput="bookNameValidation()" class="form-control imp2" id="bookmarkName">
+                        <div class="alert alert-danger d-none" id="error">Please enter the beginning of the word with a capital letter and at least 3 letters</div>
+                        <div class="alert alert-success d-none" id="error2">Thank you valid answer</div>
+                    <!-- * second label -->
+                        <label for="bookmarkURL" class="pb-1 fw-semibold mt-2"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                        <input type="url" placeholder="Website URL" oninput="bookUrlValidation()" class="form-control imp2" id="bookmarkURL" >
+                        <div class="alert alert-danger d-none" id="error3">Please enter https:// or http:// at the beginning of the text, then the rest of the text</div>
+                        <div class="alert alert-success d-none" id="error4">Thank you valid answer</div>
+                    <!-- * buttons -->
+                        <button class="btn5 btn-submit mt-2 d-block m-auto" id="myBtn" onclick="addBook()">Submit <i class="fa-brands fa-battle-net fa-spin"></i></button>
+                        <button class="btn5 btn-submit mt-2 d-none m-auto" id="yourBtn" onclick="editBook()">update <i class="fa-brands fa-slack fa-spin"></i></button>
+                </div>
+          </div>
+          <table class="table table-hover">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="myRow">
+            </tbody>
+          </table>
+        </div>
+    </section>
+    <!-- & javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

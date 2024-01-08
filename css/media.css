@@ -1,0 +1,70 @@
+@media screen and (max-width: 740px) {
+    h2{
+      font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 650px) {
+  .table{
+    width: 60%;
+  }
+  .imp3{
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 565px){
+  .table{
+    width: 100%;
+  }
+  .container{
+    height: 90%;
+    width: 90%; 
+  }
+  
+}
+@media screen and (max-width: 370px){
+  .table{
+    width: 60%;
+    font-size: 0.6rem;
+  }
+  
+  .container{
+    height: 99%;
+    width: 99%; 
+  }
+}
+@media screen and (max-width: 300px) {
+  .table{
+    width: 30%;
+    font-size: 0.5rem;
+  }
+  .imp,.imp2,.imp3{
+    font-size: 0.5rem;
+  }
+  .container{
+    height: 100%;
+    width: 100%; 
+  }
+}
+@media screen and (max-width: 270px){
+  .table{
+    width: 10%;
+    font-size: 0.3rem;
+    padding: 0;
+    margin: 0;
+    margin: auto
+  }
+  .imp,.imp2,.imp3{
+    font-size: 0.3rem;
+  }
+  .imp3{
+    padding: .3125rem;
+  }
+}
+@media screen and (max-width: 210px){
+  .imp3{
+    padding: 0;
+  }
+  .imp,.imp2,.imp3,.table{
+    font-size: 0.2rem;
+  }
+}
